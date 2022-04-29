@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Decodificador</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 
 <body>
-    <input type=""><br><br>
-    <button class="button" id="codificar" onclick="codificar()">CODIFICAR</button>
-    <button class="button" id="decodificar" onclick="decodificar()">DECODIFICAR</button><br><br>
+    <input type=""  placeholder ="Ingrese el texto aqui"><br><br>
+    <button class="button" id="encriptar" onclick="encriptar()">Encriptar</button>
+    <button class="button" id="desencriptar" onclick="desencriptar()">Desencriptar</button><br><br>
     <button class="button" id="copiar" onclick="copiar()">COPIAR</button><br><br>
 
     <input type="text" id="mensaje" placeholder="">
@@ -23,30 +24,36 @@
         var inputMensaje = document.querySelector("#mensaje")
         var input = document.querySelector("input")
         var codigo = []
-        function codificar (){
-        codigo.push(input.value)
-        console.log
-        input.value=""
-        input.focus()
-        var frase = codigo.toString ()
-        frase_codificada = frase.replaceAll(/[a]/ig,'ai').replaceAll(/[e]/ig,'enter').replaceAll(/[i]/ig,'imes').replaceAll(/[o]/ig,'ober').replaceAll(/[u]/ig,'ufat')
-        //alert(frase_codificada);
-        inputMensaje.value = frase_codificada
-    }
+        
+        function encriptar (){
+            codigo.push(input.value)
+            console.log
+            input.value=""
+            input.focus()
+            var frase = codigo.toString ()
+            frase_codificada = frase.replaceAll(/[a]/ig,'ai').replaceAll(/[e]/ig,'enter').replaceAll(/[i]/ig,'imes').replaceAll(/[o]/ig,'ober').replaceAll(/[u]/ig,'ufat')
+            //alert(frase_codificada);
+            inputMensaje.value = frase_codificada
+        }
 
-    function decodificar (){
-        codigo.push(input.value)
-        console.log
-        input.value=""
-        input.focus()
-        var frase = codigo.toString ()
-        frase_codificada = frase.replaceAll(/ai/ig,'a').replaceAll(/enter/ig,'e').replaceAll(/imes/ig,'i').replaceAll(/ober/ig,'o').replaceAll(/ufat/ig,'u')
-        //alert(frase_codificada);
-        inputMensaje.value = frase_codificada
+        function desencriptar (){
+            codigo.push(input.value)
+            console.log
+            input.value=""
+            input.focus()
+            var frase = codigo.toString ()
+            frase_codificada = frase.replaceAll(/ai/ig,'a').replaceAll(/enter/ig,'e').replaceAll(/imes/ig,'i').replaceAll(/ober/ig,'o').replaceAll(/ufat/ig,'u')
+            //alert(frase_codificada);
+            inputMensaje.value = frase_codificada
     }     
 
 
 
     </script>
 </body>
+<footer>
+    <br>Copyright &copy;2022.derechos reservados<br>
+        Autor Andres De Horta 
+    
+</footer>
 </html>
