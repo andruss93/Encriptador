@@ -10,11 +10,11 @@
 </head>
 
 <body>
-    <input type=""  placeholder ="Ingrese el texto aqui"><br><br>
+    <input type="text"  placeholder ="Ingrese el texto aqui"><br><br>
     <button class="button" id="encriptar" onclick="encriptar()" name="encriptar">Encriptar</button><br><br>
     <button class="button" id="desencriptar" onclick="desencriptar()">Desencriptar</button><br><br>
-    <button class="button" id="copiar" onclick="copiar()">COPIAR</button><br><br>
-    <input type="text" id="mensaje" placeholder="">
+    <button class="button" data-clipboard-target ="#mensaje" id="copiar" onclick="copiar()">Copiar</button><br><br>
+    <input type="text" id="mensaje" placeholder="Ningun mensaje fue encontrado">
    
     <img src="img/Muñeco.png" alt="juguete">
 
@@ -26,7 +26,8 @@
         var inputMensaje = document.querySelector("#mensaje")
         var input = document.querySelector("input")
         var codigo = []
-        
+
+
         function encriptar (){
             codigo.push(input.value)
             console.log
@@ -45,11 +46,14 @@
             input.focus()
             var frase = codigo.toString ()
             frase_codificada = frase.replaceAll(/ai/ig,'a').replaceAll(/enter/ig,'e').replaceAll(/imes/ig,'i').replaceAll(/ober/ig,'o').replaceAll(/ufat/ig,'u')
-            //alert(frase_codificada);
             inputMensaje.value = frase_codificada
     }     
 
-    inputMensaje.value = "Ningun mensaje fue encontrado"
+        function copiar (){
+            var mensaje_encriptado = inputMensaje.value
+            navigator.clipboard.writeText(mensaje_encriptado)
+            inputMensaje.value=""
+        }
 
 
     </script>
