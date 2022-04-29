@@ -3,3 +3,37 @@ footer{
     text-align: left;
     color:gray;
 }
+
+body{
+    background: color #f3f5fc;
+}
+
+button #encriptar{
+    background-color: blue;
+
+}
+
+
+button {
+    background-color: #0A3871;
+    border: 1px;
+    box-sizing: border-box;
+    color: white;
+    padding: 0px;
+    border-radius: 24px;
+    font-size: 1.2rem;
+    display: block;
+    margin: auto;
+    position: static;
+    width: 328px;
+    height: 67px;
+    left: 0px;
+    top: 0px;
+}
+
+input {
+    width: 328px;
+    height: 120px;
+    left: 0px;
+    top: 0px;
+}

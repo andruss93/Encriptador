@@ -6,15 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Decodificador</title>
     <link rel="stylesheet" href="estilos.css">
+    <img src="img/Logo.png" alt="logo">
 </head>
 
 <body>
     <input type=""  placeholder ="Ingrese el texto aqui"><br><br>
-    <button class="button" id="encriptar" onclick="encriptar()">Encriptar</button>
+    <button class="button" id="encriptar" onclick="encriptar()" name="encriptar">Encriptar</button><br><br>
     <button class="button" id="desencriptar" onclick="desencriptar()">Desencriptar</button><br><br>
     <button class="button" id="copiar" onclick="copiar()">COPIAR</button><br><br>
-
     <input type="text" id="mensaje" placeholder="">
+   
+    <img src="img/Muñeco.png" alt="juguete">
 
 
 
@@ -47,6 +49,7 @@
             inputMensaje.value = frase_codificada
     }     
 
+    inputMensaje.value = "Ningun mensaje fue encontrado"
 
 
     </script>
