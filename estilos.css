@@ -36,4 +36,17 @@ input {
     height: 120px;
     left: 0px;
     top: 0px;
+    border: 0px;
+    color: #0A3871;
+}
+
+
+div{
+    width: 400px;
+    height: 944px;
+    left: 1000px;
+    top: 40px;
+    background-color: azure;
+    border: 2px solid;
+    margin-left: 650px;    
 }
