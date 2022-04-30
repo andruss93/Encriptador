@@ -10,14 +10,18 @@
 </head>
 
 <body>
-    <input type="text"  placeholder ="Ingrese el texto aqui"><br><br>
-   
+    <div class="text">
+    <input class ="texto" type="text"  placeholder ="Ingrese el texto aqui"><br><br>
+    </div>  
+    <button class="encriptar" id="encriptar" onclick="encriptar()" name="encriptar">Encriptar</button><br><br>
+    <button class="desencriptar" id="desencriptar" onclick="desencriptar()">Desencriptar</button><br><br>
+    
     
 
     <div class = "container">
         <img src="img/Muñeco.png" alt="juguete">
-        <input type="text" id="mensaje" placeholder="Ningun mensaje fue encontrado">
-        <button class="button" data-clipboard-target ="#mensaje" id="copiar" onclick="copiar()">Copiar</button><br><br>
+        <input class = "mensaje" type="text" id="mensaje" placeholder="Ningun mensaje fue encontrado">
+        <button class="copiar" id="copiar" onclick="copiar()">Copiar</button><br><br>
         
         
 
@@ -65,11 +69,9 @@
 </body>
 <footer>
 
-    <button class="button" id="encriptar" onclick="encriptar()" name="encriptar">Encriptar</button><br><br>
-    <button class="button" id="desencriptar" onclick="desencriptar()">Desencriptar</button><br><br>
 
     <br>Copyright &copy;2022.derechos reservados<br>
-        Autor Andres De Horta 
+    Autor Andres De Horta 
     
 </footer>
 </html>

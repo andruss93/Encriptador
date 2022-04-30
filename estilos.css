@@ -1,52 +1,112 @@
 footer{
+    /*
     height: 50px;
     text-align: left;
-    color:gray;
+    color:#808080;
+    left: 1200px;*/
 }
 
 body{
-    background: color #f3f5fc;
+    background: color #0A3870;
 }
 
-button #encriptar{
-    background-color: blue;
-
-}
-
-
-button {
+.encriptar {
     background-color: #0A3871;
-    border: 1px;
-    box-sizing: border-box;
-    color: white;
-    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    align-items: flex-start;
+    padding: 24px;
     border-radius: 24px;
-    font-size: 1.2rem;
-    display: block;
-    margin: auto;
-    position: static;
     width: 328px;
     height: 67px;
-    left: 0px;
-    top: 0px;
+    left: 352px;
+    top: 885px;
+    gap: 8px;
+    color: azure;
+    border: 1px,solid lightblue;
+    font: 'inter';
+    font-weight: 400,regular;
+    size: 16px;
+    line-height: 19.36px;
+    align-content: center;
+    font-family: 'Arial';
+    font-style:normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 19px;
+    text-align: center;
+
 }
 
-input {
+.desencriptar{
+    
+    background-color: lightgrey;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    align-items: flex-start;
+    padding: 24px;
+    border-radius: 24px;    
     width: 328px;
-    height: 120px;
-    left: 0px;
-    top: 0px;
-    border: 0px;
+    height: 67px;
+    left: 700px;
+    top: 885px;   
+    gap: 8px;
+    border: 1px,solid lightblue;
+    font-weight: 400,regular;
+    size: 16px;
+    line-height: 19.36px;
+    align-content: center;
+    font-family: 'Arial';
+    font-style:normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 19px;
+    text-align: center;
+    color:#0A3871;
+
+
+
+
+}
+
+.texto{
+    position: absolute;
+    width: 680px;
+    height: 288px;
+    left: 240px;
+    top: 168px;
+    font-family: 'inter';
+    font-style: normal;
+    line-height: 150%;
     color: #0A3871;
+    font-size: 32px;
+    line-height: 48px;
 }
 
 
-div{
+.container{
     width: 400px;
     height: 944px;
     left: 1000px;
     top: 40px;
+    border-radius: 32px;
     background-color: azure;
-    border: 2px solid;
-    margin-left: 650px;    
+    border: 0 solid;
+    margin-left: 650px;
+    position: absolute;
+    background: #ffff;
+    box-shadow: 0px,24px,32px;
+
+}
+.mensaje{
+    width: 410px;
+    height: px;
+    left: 10px;
+    top: 040px;
+    border: 0px;
+    color: azure;
+    text-align: center;
+    padding: 10px;
 }
