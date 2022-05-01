@@ -1,14 +1,16 @@
 footer{
-    /*
+    
     height: 50px;
     text-align: left;
     color:#808080;
-    left: 1200px;*/
+    left: 1200px;
 }
 
 body{
-    background: color #0A3870;
+background-color: azure;
 }
+
+
 
 .encriptar {
     background-color: #0A3871;
@@ -18,10 +20,10 @@ body{
     align-items: flex-start;
     padding: 24px;
     border-radius: 24px;
-    width: 328px;
-    height: 67px;
-    left: 352px;
-    top: 885px;
+    width: 160px;
+    height: 32px;
+    left: 100px;
+    top: 400px;
     gap: 8px;
     color: azure;
     border: 1px,solid lightblue;
@@ -33,10 +35,48 @@ body{
     font-family: 'Arial';
     font-style:normal;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 12px;
     line-height: 19px;
     text-align: center;
 
+}
+
+
+.texto{
+    position: absolute;
+    background-color: azure;
+    width: 680px;
+    height: 208px;
+    left: 240px;
+    top: 168px;
+    font-family: 'inter';
+    font-style: normal;
+    color: #0A3871;
+    font-size: 16px;
+    border: 0px;
+}
+
+
+.container{
+    left: 500px;
+    top: 40px;
+    position: fixed;
+}
+
+
+.mensaje{
+    background-image: url(img/Muñeco.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color:white;
+    position: absolute;
+    width: 200px;
+    height: 400px;
+    left: 800px;
+    top: -100px;
+    padding: 5px grey;
+    font-size: 15px;
 }
 
 .desencriptar{
@@ -48,10 +88,37 @@ body{
     align-items: flex-start;
     padding: 24px;
     border-radius: 24px;    
-    width: 328px;
-    height: 67px;
-    left: 700px;
-    top: 885px;   
+    width: 160px;
+    height: 32px;
+    left: 320px;
+    top: 400px;   
+    gap: 8px;
+    border: 1px,solid lightblue;
+    font-weight: 400,regular;
+    size: 16px;
+    line-height: 19.36px;
+    text-align: center;
+    font-family: 'Arial';
+    font-style:normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 19px;
+    text-align: center;
+    color:#0A3871;
+}
+
+.copiar{
+    background-color: lightgrey;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    align-items: flex-start;
+    padding: 24px;
+    border-radius: 24px;    
+    width: 160px;
+    height: 32px;
+    left: 850px;
+    top: 400px;   
     gap: 8px;
     border: 1px,solid lightblue;
     font-weight: 400,regular;
@@ -65,48 +132,5 @@ body{
     line-height: 19px;
     text-align: center;
     color:#0A3871;
-
-
-
-
 }
 
-.texto{
-    position: absolute;
-    width: 680px;
-    height: 288px;
-    left: 240px;
-    top: 168px;
-    font-family: 'inter';
-    font-style: normal;
-    line-height: 150%;
-    color: #0A3871;
-    font-size: 32px;
-    line-height: 48px;
-}
-
-
-.container{
-    width: 400px;
-    height: 944px;
-    left: 1000px;
-    top: 40px;
-    border-radius: 32px;
-    background-color: azure;
-    border: 0 solid;
-    margin-left: 650px;
-    position: absolute;
-    background: #ffff;
-    box-shadow: 0px,24px,32px;
-
-}
-.mensaje{
-    width: 410px;
-    height: px;
-    left: 10px;
-    top: 040px;
-    border: 0px;
-    color: azure;
-    text-align: center;
-    padding: 10px;
-}
