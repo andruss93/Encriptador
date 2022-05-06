@@ -23,6 +23,12 @@ body{
     top: 110%;
     width: 40%;
     height: 60%;
+    align-items: center;
+}
+p{
+    font: 1em sans-serif;
+    color: grey;
+    top: 20px;
 }
 
 
@@ -40,18 +46,24 @@ body{
     float: left;
     /* position: absolute; */
     background-color: azure;
-    /* idth: 680px;
+    /* width: 680px;
     height: 208px; */
     width: 80%;
     height: 60%;
     left: 240px;
     top: 168px;
-    font-family: 'inter';
-    font-style: normal;
+    font-family: 'Arial';
+    font-style: italic;
     color: #0A3871;
-    font-size: 16px;
+    font-size: 26px;
     border: none;
     outline: none;
+    align-items: center;
+}
+
+::-webkit-input-placeholder{
+    color: #0A3871;
+    font-style: italic;
 }
 
 
@@ -77,9 +89,10 @@ body{
     left: 800px;
     top: 30px;
     padding: 5px grey;
-    font-size: 15px;
+    font-size: 13px;
     border-radius: 23px;
 }
+
 
 
 .encriptar {
@@ -92,7 +105,7 @@ body{
     width: 160px;
     height: 32px;
     left: 100px;
-    top: 400px;
+    top: 450px;
     gap: 8px;
     color: azure;
     border: 1px,solid lightblue;
@@ -115,7 +128,7 @@ body{
     width: 160px;
     height: 32px;
     left: 320px;
-    top: 400px;   
+    top: 450px;   
     gap: 8px;
     border: 1px,solid lightblue;
     size: 16px;
@@ -137,8 +150,8 @@ body{
     border-radius: 24px;    
     width: 160px;
     height: 32px;
-    left: 850px;
-    top: 400px;   
+    left: 825px;
+    top: 450px;   
     gap: 8px;
     border: 1px,solid lightblue;
     size: 16px;
