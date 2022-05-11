@@ -42,7 +42,7 @@
             input.value=""
             input.focus()
             var frase = codigo.toString ()
-            frase_codificada = frase.replaceAll(/[a]/ig,'ai').replaceAll(/[e]/ig,'enter').replaceAll(/[i]/ig,'imes').replaceAll(/[o]/ig,'ober').replaceAll(/[u]/ig,'ufat')
+            frase_codificada = frase.replaceAll(/a/ig,'al').replaceAll(/e/ig,'enter').replaceAll(/i/ig,'imes').replaceAll(/o/ig,'ober').replaceAll(/u/ig,'ufat')
             //alert(frase_codificada);
             inputMensaje.value = frase_codificada
         }
@@ -53,7 +53,7 @@
             input.value=""
             input.focus()
             var frase = codigo.toString ()
-            frase_codificada = frase.replaceAll(/ai/ig,'a').replaceAll(/enter/ig,'e').replaceAll(/imes/ig,'i').replaceAll(/ober/ig,'o').replaceAll(/ufat/ig,'u')
+            frase_codificada = frase.replaceAll(/al/ig,'a').replaceAll(/enter/ig,'e').replaceAll(/imes/ig,'i').replaceAll(/ober/ig,'o').replaceAll(/ufat/ig,'u')
             inputMensaje.value = frase_codificada
     }     
 
